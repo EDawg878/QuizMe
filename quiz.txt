@@ -4,7 +4,7 @@ las judías verdes|green beans
 las manzanas|apples
 las naranjas|oranges
 las peras|pears
-lasa zanahorias|carrots
+las zanahorias|carrots
 los champiñones|mushrooms
 los guisantes|peas
 los huevos|eggs
