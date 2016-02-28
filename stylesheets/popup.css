@@ -78,7 +78,7 @@
 }
 
 .fade-in.question_container {
-    background-image: url(index_card.svg);
+    background-color: #EEDEDF;
     position: relative;
     margin: auto;
     text-align: center;
