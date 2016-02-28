@@ -57,10 +57,10 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 // Toggle Button
 chrome.browserAction.onClicked.addListener(function(tab) {
   if (enabled) {
-    chrome.browserAction.setIcon({path : "disabled.png", tabId : tab.id});
+    chrome.browserAction.setIcon({path : "/img/disabled.jpg", tabId : tab.id});
     enabled = false; 
   } else {
-    chrome.browserAction.setIcon({path : "enabled.png", tabId : tab.id});
+    chrome.browserAction.setIcon({path : "/img/enabled.jpg", tabId : tab.id});
     enabled = true;
   }
 });

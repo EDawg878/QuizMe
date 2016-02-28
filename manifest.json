@@ -8,7 +8,7 @@
   "omnibox": { "keyword" : "quizme" },
   "browser_action": {
     "default_title" : "Quiz Me",
-    "default_icon" : "enabled.png"
+    "default_icon" : "/img/enabled.jpg"
   },
   "background": {
       "scripts": ["/js/jquery.min.js", "/js/background.js"]

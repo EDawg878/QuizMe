@@ -4,7 +4,10 @@ var currSet = [];
 var nIncorrect = 0;
 var nMaxIncorrect = 3;
 var displayAns = false;
+var displayNotification = false;
 
+var time;
+var question;
 var curr;
 
 background.populateSet(currSet);
@@ -12,12 +15,14 @@ nextQuestion();
 
 function nextQuestion() {
   if (currSet.length == 0) {
-    alert("FINISHED");
-    window.location.href = background.destURL;
+    green("Completed Set!");
+    setTimeout(()=> {
+      window.location.href = background.destURL;
+    }, 1500);
   } else {
     var arr = currSet.pop();
     var q = arr[0];
-    $("#question").html(q);
+    setQuestion(q);
     curr = arr;
   }
 }
@@ -27,24 +32,61 @@ function check(userAns) {
   var a = curr[1];
   if (displayAns) {
     if (eq(userAns, a)) {
-      alert("Good");
-      displayAns = false;
+      green("Good!");
+      setTimeout(()=> {
+        reset();
+        displayAns = false;
+        nIncorrect = 0;
+        nextQuestion();
+      }, 1500);
+    } else {
+        red("You must copy the answer!");
+        setTimeout(reset, 1500);
+    }
+} else if (eq(userAns, a)) {
+    green("Correct!");
+    setTimeout(()=> {
+      reset();
       nIncorrect = 0;
       nextQuestion();
-    } else {
-      alert("Copy the answer you N00B");
-    }
-  } else if (eq(userAns, a)) {
-    alert("You are correct!");
-    nIncorrect = 0;
-    nextQuestion();
+    }, 1500);
   } else if (++nIncorrect >= nMaxIncorrect) {
-      alert("SHOWING THE ANSWER YOU N00B");
-      $("#question").html(q + " | " + a);
-      displayAns = true;
+      red("Wrong! Here's the answer");
+      setTimeout(()=> {
+        reset(q + " | " + a);
+        displayAns = true;
+      }, 1500);
   } else {
-    alert("You are WRONG!!! TRY AGAINAINA");
+    red("Wrong!");
+    setTimeout(reset, 1500);
   }
+}
+
+function setQuestion(txt) {
+  question = txt;
+  $("#question").html(txt);
+}
+
+function reset(txt) {
+  displayNotification = false;
+  if (txt) {
+    $("#question").html(txt);
+  } else {
+    $("#question").html(question);
+  }
+  $("#box").removeAttr("style");
+}
+
+function green(txt) {
+  displayNotification = true;
+  $("#question").html(txt);
+  $("#box").css("background-color", "#00ff00");
+}
+
+function red(txt) {
+  displayNotif = true;
+  $("#question").html(txt);
+  $("#box").css("background-color", "#620000");
 }
 
 function eq(q, a) {
@@ -52,6 +94,7 @@ function eq(q, a) {
 }
 
 function submit() {
+  if (displayNotification) return;
   var userAns = $("#answer").val();
   check(userAns);
   $("#answer").val("");
