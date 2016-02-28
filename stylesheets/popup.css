@@ -44,7 +44,7 @@ outline:0;
     -webkit-animation: fadeIn ease-in .5s;
     /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in .5s;
-    animation: fadeIn ease-in .5s;
+    animation: fadeIn ease-="in .5s;
     -webkit-animation-fill-mode: forwards;
     /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     -moz-animation-fill-mode: foFF4635rwards;
@@ -77,9 +77,9 @@ outline:0;
     margin-top: 50px;
     Width:60%;
     font-size: 1.7em;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
 }
 .fade-in.three {
      -webkit-transform: translateY(-50%);
@@ -88,9 +88,9 @@ outline:0;
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: 100px;
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    animation-delay: 1.2s;
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    animation-delay: .8s;
 }
 .fade-in.question_container{
     margin-top: 10px;
@@ -106,9 +106,9 @@ outline:0;
     padding: 20px; 
     width: 750px;
     height: 300px;    
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-duration: 1.4s;
-    animation-duration: 1.4s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-duration: 1.2s;
+    animation-duration: 1.2s;
 }
 
 .fade-in.three {
@@ -123,17 +123,22 @@ outline:0;
     animation-delay: 1.5s;
 }
 .input_box{
-    margin-top: 30px;
-    color: #FF4635;
-    text-align: center;
-     height:100px;
-     width:400px;
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
 }
 .fade-in.input {
     color: #FF4635;
-     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+    border: 4px solid #3ABEC3;
+    margin-top: 10px;
+    margin-left: 20;
+    border-radius: 10px;
+    height:100px;
+    width:400px;  
+    color: #FF4635;
+     -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 /*---make a basic box ---*/
