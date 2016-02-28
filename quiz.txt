@@ -1,0 +1,42 @@
+el plato,plate
+el vaso,glass
+el tenedor,fork
+la cuchara,table spoon
+el cuchillo,knife
+la servilleta,napkin
+tener hambre,hungry
+tener sed,thirsty
+los huevos,egg
+el jamón,ham
+el tocino,bacon
+el yogur,yogurt
+el cereal,cereal
+la leche,milk
+el té,tea
+el café,coffee
+el pan tostado,toast
+el jugo de___,I want___juice
+el agua,water
+la taza,cup (hot)
+el bocadillo,sandwich
+la ensalada,salad
+la sopa,soup
+las papas fritas,french fries
+el perro caliente,hot dog
+la hamburguesa,hamburger
+el queso,cheese
+la gaseosa,soda
+la limonada,lemonade
+el té helado,ice tea
+steak or beef,el bistec
+la carne,meat
+el pescado,fish
+el pollo,chicken
+el arroz,rice
+las papas,potatos
+el maíz,corn
+los dulces,candy
+la torta,pie
+el pudín,pudding
+el flan,flan
+el helado,ice cream

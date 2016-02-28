@@ -1,0 +1,17 @@
+{
+  "name": "QuizMe",
+  "options_page": "settings.html",
+  "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "omnibox": { "keyword" : "quizme" },
+  "browser_action": {
+    "default_title" : "Quiz Me",
+    "default_icon" : "enabled.png"
+  },
+  "background": {
+      "scripts": ["jquery.min.js", "background.js"]
+  },
+  "manifest_version": 2
+}
