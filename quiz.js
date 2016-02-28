@@ -3,6 +3,7 @@ var background = chrome.extension.getBackgroundPage();
 var currSet = [];
 var nIncorrect = 0;
 var nMaxIncorrect = 3;
+var displayAns = false;
 
 var curr;
 
@@ -24,14 +25,24 @@ function nextQuestion() {
 function check(userAns) {
   var q = curr[0];
   var a = curr[1];
-  if (userAns == a) {
+  if (displayAns) {
+    if (userAns == a) {
+      alert("Good");
+      displayAns = false;
+      nIncorrect = 0;
+      nextQuestion();
+    } else {
+      alert("Copy the answer you N00B");
+    }
+  } else if (userAns == a) {
     alert("You are correct!");
-    nextQuestion(); 
-  } else if (++nIncorrect >= nMaxIncorrect) {
-    alert("Skipping problem...");
-    currSet.unshift(curr);
+    curr[2] = 0;
     nIncorrect = 0;
     nextQuestion();
+  } else if (++nIncorrect >= nMaxIncorrect) {
+      alert("SHOWING THE ANSWER YOU N00B");
+      $("#question").html(q + " | " + a);
+      displayAns = true;
   } else {
     alert("You are WRONG!!! TRY AGAINAINA");
   }

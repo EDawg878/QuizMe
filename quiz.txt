@@ -1,42 +1,71 @@
-el plato,plate
-el vaso,glass
-el tenedor,fork
-la cuchara,table spoon
-el cuchillo,knife
-la servilleta,napkin
-tener hambre,hungry
-tener sed,thirsty
-los huevos,egg
-el jamón,ham
-el tocino,bacon
-el yogur,yogurt
-el cereal,cereal
-la leche,milk
-el té,tea
-el café,coffee
-el pan tostado,toast
-el jugo de___,I want___juice
-el agua,water
-la taza,cup (hot)
-el bocadillo,sandwich
-la ensalada,salad
-la sopa,soup
-las papas fritas,french fries
-el perro caliente,hot dog
-la hamburguesa,hamburger
-el queso,cheese
-la gaseosa,soda
-la limonada,lemonade
-el té helado,ice tea
-steak or beef,el bistec
-la carne,meat
-el pescado,fish
-el pollo,chicken
-el arroz,rice
-las papas,potatos
-el maíz,corn
-los dulces,candy
-la torta,pie
-el pudín,pudding
-el flan,flan
-el helado,ice cream
+¿Cuánto es?|How much is it?
+las cebollas|onions
+las judías verdes|green beans
+las manzanas|apples
+las naranjas|oranges
+las peras|pears
+lasa zanahorias|carrots
+los champiñones|mushrooms
+los guisantes|peas
+los huevos|eggs
+los limones|lemons
+los melocotones|peaches
+los melones|melons
+los pepinos|cucumbers
+los pimientos rojos|red peppers
+la pimienta|pepper
+el sal|salt
+los plátanos|bananas
+deme|give me
+no queda(n)|there are none left
+¿Algo más?|anything else?
+¿Cuánto es?|how much is it?
+nada más|nothing else
+medio kilo|half a kilo
+una docena de huevos|a dozen eggs
+un cartón de leche|carton of milk
+un paquete|a packet
+azúcar|sugar
+arroz|rice
+una barra de pan|loaf of bread
+una botella de aceite|bottle of oil
+una caja de galletas|box of biscuits
+una lata de atún|tin of tuna
+una pastilla de mantequilla|packet of butter
+como|I eat
+bebo|I drink
+el café|coffee
+el cordero|lamb
+el pescado|fish
+el pollo|chicken
+el queso|cheese
+el té|tea
+el yogur|yoghurt
+el zumo|juice
+el carne de cerdo|pork
+la comida basura|junk food
+la comida rápida|fast food
+la ensalada|salad
+la fruta|fruit
+la leche|milk
+la lechuga|lettuce
+la merluza|hake
+la ternera|veal
+las gambas|prawns
+las tartas con nata|cream cakes
+las verduras|green veg
+los churros|churros
+los dulces|sweets
+los filetes|steak
+los huevos|eggs
+los legumbres|vegetables
+los pasteles|cakes
+los perritos calientes|hot dogs
+contiene|it contains
+demasiado|too much
+poco|a little
+mucho|a lot
+la fibra|fibre
+la grasa|fat
+las proteinas|proteins
+las vitaminas|vitamins

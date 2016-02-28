@@ -12,7 +12,7 @@ var totalSet = [];
 // QUIZ
 function read(data) {
   data.split("\n").forEach(function(line) {
-    var entry = line.split(",");
+    var entry = line.split("|");
     var q = entry[0];
     var a = entry[1];
     totalSet.push([q, a]);
