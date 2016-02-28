@@ -26,7 +26,7 @@ function check(userAns) {
   var q = curr[0];
   var a = curr[1];
   if (displayAns) {
-    if (userAns == a) {
+    if (eq(userAns, a)) {
       alert("Good");
       displayAns = false;
       nIncorrect = 0;
@@ -34,9 +34,8 @@ function check(userAns) {
     } else {
       alert("Copy the answer you N00B");
     }
-  } else if (userAns == a) {
+  } else if (eq(userAns, a)) {
     alert("You are correct!");
-    curr[2] = 0;
     nIncorrect = 0;
     nextQuestion();
   } else if (++nIncorrect >= nMaxIncorrect) {
@@ -46,6 +45,10 @@ function check(userAns) {
   } else {
     alert("You are WRONG!!! TRY AGAINAINA");
   }
+}
+
+function eq(q, a) {
+  return q.toUpperCase().trim() === a.toUpperCase().trim();
 }
 
 function submit() {
