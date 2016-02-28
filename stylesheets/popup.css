@@ -69,26 +69,21 @@
 }
 
 .fade-in.set_name {
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
     margin-top: 50px;
-    margin-left: 500px;
-    font-size: 1.7em;
+    margin-left: 510px;
+    font-size: 1.8em;
     -webkit-animation-delay: .5s;
     -moz-animation-delay: .5s;
     animation-delay: .5s;
 }
 
 .fade-in.question_container {
+    background-image: url(index_card.svg);
     position: relative;
     margin: auto;
     text-align: center;
     vertical-align: middle;
     color: #FF4635;
-    background-color: #EEDEDF;
     display: -webkit-box;
     border-radius: 25px;
     border: 4px solid #3ABEC3;
@@ -140,10 +135,11 @@
 }
 
 #submit {
-    border: 1px, #F3E7D1;
+    border: 2px solid #3ABEC3;
     padding: 5;
     text-align: center;
     margin-top: 15px;
+    height: 75px;
     font-weight: bold;
     font-size: .8em;
 }
