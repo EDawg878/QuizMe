@@ -11,7 +11,7 @@
     "default_icon" : "enabled.png"
   },
   "background": {
-      "scripts": ["/js/jquery.min.js", "/js/background.js"]
+      "scripts": ["jquery.min.js", "background.js"]
   },
   "manifest_version": 2
 }
