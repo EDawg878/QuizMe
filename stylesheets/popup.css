@@ -1,10 +1,11 @@
 :focus {
-outline:0;
+    outline: 0;
 }
+
 .background {
     background-color: #FF4635;
     margin: 0 auto;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -45,110 +46,114 @@ outline:0;
     /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in .5s;
     animation: fadeIn ease-="in .5s;
-    -webkit-animation-fill-mode: forwards;
+ -webkit-animation-fill-mode: forwards;
     /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     -moz-animation-fill-mode: foFF4635rwards;
     animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
     -moz-animation-duration: .5s;
     animation-duration: .5s;
-    
 }
 
-.fade-in.one {
+.fade-in.title {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
-    margin-top: 10%;
+    margin-top: 80px;
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
-.fade-in.two {
-     -webkit-transform: translateY(-50%);
+.fade-in.set_name {
+    -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: 50px;
-    Width:60%;
+    margin-left: 500px;
     font-size: 1.7em;
     -webkit-animation-delay: .5s;
     -moz-animation-delay: .5s;
     animation-delay: .5s;
 }
-.fade-in.three {
-     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-top: 100px;
-    -webkit-animation-delay: .8s;
-    -moz-animation-delay: .8s;
-    animation-delay: .8s;
-}
-.fade-in.question_container{
-    margin-top: 10px;
+
+.fade-in.question_container {
     position: relative;
-    margin:auto;   
+    margin: auto;
     text-align: center;
     vertical-align: middle;
-    color:#FF4635;
+    color: #FF4635;
     background-color: #EEDEDF;
-    display:-webkit-box;
+    display: -webkit-box;
     border-radius: 25px;
     border: 4px solid #3ABEC3;
-    padding: 20px; 
+    padding: 20px;
     width: 750px;
-    height: 300px;    
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-duration: 1.2s;
-    animation-duration: 1.2s;
+    height: 300px;
+    -webkit-animation-delay: .7s;
+    -moz-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
-.fade-in.three {
-     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-top: 50px;
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+#question {
+    text-align: center;
 }
-.input_box{
-        margin-top: 20px;
-        position: relative;
-        text-align: center;
+
+.input_box {
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
 }
+
 .fade-in.input {
     color: #FF4635;
     border: 4px solid #3ABEC3;
     margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
     margin-left: 20;
     border-radius: 10px;
-    height:100px;
-    width:400px;  
+    height: 60px;
+    width: 600px;
     color: #FF4635;
-     -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    animation-delay: 1.6s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
 }
+
+.fade-in.submit {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 70px;
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+#submit {
+    border: 1px, #F3E7D1;
+    padding: 5;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: .8em;
+}
+
 
 /*---make a basic box ---*/
 
 .box {
     position: relative;
-    text-align: center;
     font-weight: bold;
     font-size: 50px;
     color: #EEDEDF;
-    margin: 10px;
-    
 }
